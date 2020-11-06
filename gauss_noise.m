@@ -1,7 +1,9 @@
 %signal with gaussian noise
 
-n = 0:50;
-x = cos(0.04*pi*n); w = 0.2*randn(size(n)); % size(n) = 51
+n = 0:100;
+x = cos(0.04*pi*n);
+w = 0.2*randn(size(n)); % size(n) = 101
+
 y = x+w;
 
 figure(1)
